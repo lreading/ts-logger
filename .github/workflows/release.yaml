@@ -1,7 +1,9 @@
 name: Release
 
 on:
-  release:
+  push:
+    tags:
+      - 'v*'
 
 jobs:
   build:
