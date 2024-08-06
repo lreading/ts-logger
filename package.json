@@ -1,6 +1,6 @@
 {
   "name": "@lreading/ts-logger",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "An opinionated logger for TypeScript projects",
   "main": "dist/index.js",
   "scripts": {
