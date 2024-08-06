@@ -36,9 +36,6 @@ jobs:
           git config user.email "github-actions[bot]@users.noreply.github.com"
           pnpm version patch -m 'Creating Release %s'
           git push origin main --tags
-          
-      - name: Create Release
-        uses: softprops/action-gh-release@v2
 
       - name: Publish
         run: pnpm publish
