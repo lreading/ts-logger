@@ -1,0 +1,36 @@
+{
+  "name": "@lreading/ts-logger",
+  "version": "1.0.0",
+  "description": "An opinionated logger for TypeScript projects",
+  "main": "dist/index.js",
+  "scripts": {
+    "build": "npm-run-all lint test audit tsc",
+    "tsc": "tsc",
+    "lint": "eslint . --ext .ts --fix",
+    "test": "jest",
+    "audit": "pnpm audit --registry=https://registry.npmjs.org/"
+  },
+  "keywords": [],
+  "author": "Leo Reading",
+  "license": "MIT",
+  "dependencies": {
+    "logform": "^2.6.0",
+    "winston": "^3.11.0",
+    "winston-transport": "^4.6.0"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.25.2",
+    "@babel/preset-env": "^7.25.3",
+    "@babel/preset-typescript": "^7.24.7",
+    "@types/jest": "^29.5.12",
+    "@types/node": "^20.14.14",
+    "@typescript-eslint/eslint-plugin": "^6.9.0",
+    "@typescript-eslint/parser": "^6.9.0",
+    "babel-jest": "^29.7.0",
+    "eslint": "^8.52.0",
+    "jest": "^29.7.0",
+    "npm-run-all": "^4.1.5",
+    "ts-node": "^10.9.1",
+    "typescript": "^5.2.2"
+  }
+}
