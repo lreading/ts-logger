@@ -26,9 +26,9 @@ jobs:
 
       - name: Update version
         run: |
-          pnpm version patch
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
+          pnpm version patch
           git add package.json pnpm-lock.yaml
           git commit -m "[no ci] chore: bump version"
           git tag v$(node -p "require('./package.json').version")
