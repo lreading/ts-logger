@@ -28,8 +28,5 @@ jobs:
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
-          pnpm version patch
-          git add package.json pnpm-lock.yaml
-          git commit -m "[no ci] chore: bump version"
-          git tag v$(node -p "require('./package.json').version")
+          pnpm version patch -m '[no ci] Creating Release %s'
           git push origin main --tags
